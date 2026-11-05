@@ -21,19 +21,19 @@ int main()
     {
         printf("addition\n");
         int resultat = number1 + number2;
-        printf("Resultat: %d\n", resultat);
+        printf("%d %c %d = %d\n", number1, operateur, number2, resultat);
     }
     else if (operateur == '-')
     {
         printf("soustraction\n");
         int resultat2 = number1 - number2;
-        printf("Resultat: %d\n", resultat2);
+        printf("%d %c %d = %d\n", number1, operateur, number2, resultat2);
     }
     else if (operateur == '*')
     {
         printf("multiplication\n");
         int resultat3 = number1 * number2;
-        printf("Resultat: %d\n", resultat3);
+        printf("%d %c %d = %d\n", number1, operateur, number2, resultat3);
     }
     else if (operateur == '/')
     {
@@ -42,7 +42,7 @@ int main()
         if (number2 != 0)
         {
             double resultat4 = (double)number1 / number2;
-            printf("Resultat: %f\n", resultat4);
+            printf("%d %c %d = %.2f\n", number1, operateur, number2, resultat4);
         }
         else
         {
@@ -56,7 +56,7 @@ int main()
         if (number2 != 0)
         {
             int resultat5 = number1 % number2;
-            printf("Resultat: %d\n", resultat5);
+            printf("%d %c %d = %d\n", number1, operateur, number2, resultat5);
         }
         else
         {
@@ -68,8 +68,9 @@ int main()
         printf("Operateur non reconnu\n");
     }
 
-    return(0);
+    return 0;
 }
+
 
 
 
