@@ -16,5 +16,30 @@ int main()
     printf("Choisissez un deuxieme nombre : ");
     scanf("%d", &number2);
 
+    if (operateur == '+')
+    {
+        printf("addition\n");
+    }
+    else if (operateur == '-')
+    {
+        printf("soustraction\n");
+    }
+    else if (operateur == '*')
+    {
+        printf("multiplication\n");
+    }
+    else if (operateur == '/')
+    {
+        printf("division\n");
+    }
+    else if (operateur == '%')
+    {
+        printf("modulo\n");
+    }
+    else
+    {
+        printf("Operateur non reconnu\n");
+    }
+
     return(0);
 }
